@@ -10,6 +10,15 @@
     "name": "bolt.diy team",
     "email": "maintainers@bolt.diy"
   },
+
+
+  {
+  "scripts": {
+    "build": "NODE_OPTIONS='--max-old-space-size=4096' remix vite:build"
+  }
+}
+
+
   "scripts": {
     "deploy": "npm run build && wrangler pages deploy",
     "build": "remix vite:build",
